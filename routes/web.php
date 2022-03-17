@@ -29,5 +29,5 @@ Route::post('/admin/delete/{student:slug}', [AdminController::class,'deleteStude
 Route::get('/admin/student-profile/{student:slug}', [AdminController::class,'studentShow']);
 
 
-Route::get('/admin/portofolio/{student:slug}', [PortofolioController::class,'show']);
-Route::get('/admin/portofolio', [PortofolioController::class,'show']);
+Route::get('/admin/portofolio/add/{student:slug}', [PortofolioController::class,'show']);
+Route::post('/admin/portofolio/add/{student:slug}', [PortofolioController::class,'insertPortofolio']);

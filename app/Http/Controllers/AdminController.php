@@ -87,6 +87,7 @@ class AdminController extends Controller
 
     public function studentShow(Student $student)
     {
-        return view('admin.studentDetails', compact('student'));
+        $studentFull = $student->load(['portofolio']);
+        return view('admin.studentDetails', compact('studentFull'));
     }
 }

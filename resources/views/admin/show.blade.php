@@ -18,7 +18,7 @@
                 <th scope="col">No.</th>
                 <th scope="col">Student</th>
                 <th scope="col">Class</th>
-                <th scope="col">Action</th>
+                <th scope="col" style="text-align: center;">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -30,7 +30,7 @@
 
                 <td>
                     <div class="d-flex justify-content-center">
-                        <a href="/admin/edit/{{$student->slug}}" class="btn btn-success me-2"><span class="bi bi-plus"></span></a>
+                        <a href="/admin/portofolio/add/{{$student->slug}}" class="btn btn-success me-2"><span class="bi bi-plus"></span></a>
                         <a href="/admin/student-profile/{{$student->slug}}" class="btn btn-primary me-2"><span class="bi-search"></a>
                         <a href="/admin/edit/{{$student->slug}}" class="btn btn-warning me-2"><span class="bi bi-pencil"></span></a>
                         <form action="/admin/delete/{{$student->slug}}" method="post">
